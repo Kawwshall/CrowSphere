@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en" class="dark">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CrowSphere - Nature Explorer AI</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="icon" type="image/x-icon" href="/images/favicon.ico">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+    <link href="styles.css" rel="stylesheet">
+    <script>
+        tailwind.config = {
+            darkMode: 'class',
+            theme: {
+                extend: {
+                    colors: {
+                        darkBg: '#1a202c',
+                        darkSecondary: '#2d3748',
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+<body class="bg-gradient-to-r from-gray-800 to-gray-900 text-gray-100 min-h-screen">
+    <nav class="bg-darkSecondary bg-opacity-90 shadow-md p-4">
+        <div class="container mx-auto flex justify-between items-center">
+            <a href="index.html" class="text-2xl font-bold text-green-400">CrowSphere</a>
+            <div>
+                <a href="about.html" class="text-gray-300 hover:text-green-400 transition duration-300">About</a>
+                <a href="explore.html" class="text-gray-300 hover:text-green-400 transition duration-300 ml-4">Explore</a>
+                <a href="history.html" class="text-gray-300 hover:text-green-400 transition duration-300 ml-4">History</a>
+            </div>
+        </div>
+    </nav>
+
+    <main class="container mx-auto mt-8 p-4">
+        <div class="bg-darkBg rounded-lg shadow-xl p-8 max-w-4xl mx-auto">
+            <h1 class="text-4xl font-bold mb-6 text-center gradient-text">Welcome to CrowSphere</h1>
+            <p class="text-gray-300 mb-6 text-lg text-center">Explore nature like never before with the power of AI</p>
+        
+            
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-6 mb-8">
+                <div class="bg-darkSecondary p-4 rounded-lg text-center">
+                    <i class="fas fa-tree text-3xl text-green-400 mb-2"></i>
+                    <h3 class="text-xl font-semibold mb-2">Identify Trees</h3>
+                    <p class="text-gray-300">Discover various tree species in your surroundings</p>
+                </div>
+                <div class="bg-darkSecondary p-4 rounded-lg text-center">
+                    <i class="fas fa-leaf text-3xl text-green-400 mb-2"></i>
+                    <h3 class="text-xl font-semibold mb-2">Analyze Leaves</h3>
+                    <p class="text-gray-300">Learn about different types of leaves and their characteristics</p>
+                </div>
+                <div class="bg-darkSecondary p-4 rounded-lg text-center">
+                    <i class="fas fa-paw text-3xl text-green-400 mb-2"></i>
+                    <h3 class="text-xl font-semibold mb-2">Recognize Animals</h3>
+                    <p class="text-gray-300">Identify and learn about various animals in nature</p>
+                </div>
+            </div>
+            
+            <p class="text-gray-300 mb-6 text-center">CrowSphere is an innovative web application designed to help nature lovers identify and learn about various trees, leaves, and animals using the power of AI.</p>
+            
+            <div class="text-center">
+                <a href="explore.html" class="bg-green-500 text-white px-8 py-3 rounded-lg shadow hover:bg-green-600 transition duration-300 text-lg font-semibold">Start Exploring</a>
+            </div>
+        </div>
+    </main>
+
+    <footer class="bg-darkSecondary bg-opacity-90 text-center p-4 mt-8">
+        <p class="text-gray-400">&copy; 2024 CrowSphere by Crow. All rights reserved.</p>
+    </footer>
+</body>
+</html>

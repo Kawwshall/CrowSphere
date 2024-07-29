@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en" class="dark">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About CrowSphere</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="icon" type="image/x-icon" href="/images/favicon.ico">
+
+
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+    <link href="styles.css" rel="stylesheet">
+    <script>
+        tailwind.config = {
+            darkMode: 'class',
+            theme: {
+                extend: {
+                    colors: {
+                        darkBg: '#1a202c',
+                        darkSecondary: '#2d3748',
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+<body class="bg-gradient-to-r from-gray-800 to-gray-900 text-gray-100 min-h-screen">
+    <nav class="bg-darkSecondary bg-opacity-90 shadow-md p-4">
+        <div class="container mx-auto flex justify-between items-center">
+            <a href="index.html" class="text-2xl font-bold text-green-400">CrowSphere</a>
+            <div>
+                <a href="about.html" class="text-gray-300 hover:text-green-400 transition duration-300">About</a>
+                <a href="explore.html" class="text-gray-300 hover:text-green-400 transition duration-300 ml-4">Explore</a>
+                <a href="history.html" class="text-gray-300 hover:text-green-400 transition duration-300 ml-4">History</a>
+            </div>
+        </div>
+    </nav>
+
+    <main class="container mx-auto mt-8 p-4">
+        <div class="bg-darkBg rounded-lg shadow-xl p-6 max-w-4xl mx-auto">
+            <h1 class="text-4xl font-bold mb-6 text-center text-green-400">About CrowSphere</h1>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8 mb-8">
+                <!-- <div class="flex flex-col justify-center"> -->
+                    <p class="mb-4 text-gray-300">CrowSphere is an innovative application that combines the power of artificial intelligence with the wonders of nature. Our mission is to help people learn about and appreciate the natural world around them.</p>
+                    <p class="mb-4 text-gray-300">Using advanced image recognition and natural language processing, our AI can identify plants, animals, and natural phenomena. Whether you're a curious beginner or a seasoned naturalist, CrowSphere is here to enhance your outdoor experiences.</p>
+                <!-- </div> -->
+            </div>
+
+            <h2 class="text-2xl font-bold mt-8 mb-4 text-green-400">Features</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                <div class="bg-darkSecondary p-4 rounded-lg">
+                    <i class="fas fa-camera text-3xl text-green-400 mb-2"></i>
+                    <h3 class="text-xl font-semibold mb-2">Instant Identification</h3>
+                    <p class="text-gray-300">Quickly identify flora and fauna from your uploaded images</p>
+                </div>
+                <div class="bg-darkSecondary p-4 rounded-lg">
+                    <i class="fas fa-info-circle text-3xl text-green-400 mb-2"></i>
+                    <h3 class="text-xl font-semibold mb-2">Detailed Information</h3>
+                    <p class="text-gray-300">Get in-depth details about species, habitats, and ecosystems</p>
+                </div>
+                <div class="bg-darkSecondary p-4 rounded-lg">
+                    <i class="fas fa-question-circle text-3xl text-green-400 mb-2"></i>
+                    <h3 class="text-xl font-semibold mb-2">Nature Q&A</h3>
+                    <p class="text-gray-300">Ask and receive answers to your nature-related questions</p>
+                </div>
+                <div class="bg-darkSecondary p-4 rounded-lg">
+                    <i class="fas fa-lightbulb text-3xl text-green-400 mb-2"></i>
+                    <h3 class="text-xl font-semibold mb-2">Fascinating Facts</h3>
+                    <p class="text-gray-300">Discover interesting tidbits about the natural world</p>
+                </div>
+            </div>
+
+            <div class="mt-8 bg-green-600 bg-opacity-20 p-6 rounded-lg">
+                <h2 class="text-2xl font-bold mb-4 text-green-400">About the Creator</h2>
+                <p class="text-gray-300">Hello! I'm Crow, the creator of CrowSphere. As an enthusiast of both nature and technology, I developed this application to bridge the gap between AI and the natural world. CrowSphere is my entry for the 'AI for Tomorrow' hackathon on Hashnode, where I aim to showcase how AI can enhance our understanding and appreciation of nature.</p>
+            </div>
+
+            <p class="mt-8 text-sm text-gray-400">Note: CrowSphere uses the Gemini API to power its AI capabilities, ensuring accurate and up-to-date information about the natural world.</p>
+        </div>
+    </main>
+
+    <footer class="bg-darkSecondary bg-opacity-90 text-center p-4 mt-8">
+        <p class="text-gray-400">&copy; 2024 CrowSphere by Crow. All rights reserved.</p>
+    </footer>
+</body>
+</html>

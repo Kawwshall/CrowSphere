@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en" class="dark">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CrowSphere</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="icon" type="image/x-icon" href="/images/favicon.ico">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+    <link href="styles.css" rel="stylesheet">
+    <script>
+        tailwind.config = {
+            darkMode: 'class',
+            theme: {
+                extend: {
+                    colors: {
+                        darkBg: '#1a202c',
+                        darkSecondary: '#2d3748',
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+<body class="bg-gradient-to-r from-gray-800 to-gray-900 text-gray-100 min-h-screen">
+    <nav class="bg-darkSecondary bg-opacity-90 shadow-md p-4">
+        <div class="container mx-auto flex justify-between items-center">
+            <a href="index.html" class="text-2xl font-bold text-green-400">CrowSphere</a>
+            <div>
+                <a href="about.html" class="text-gray-300 hover:text-green-400 transition duration-300">About</a>
+                <a href="explore.html" class="text-gray-300 hover:text-green-400 transition duration-300 ml-4">Explore</a>
+                <a href="history.html" class="text-gray-300 hover:text-green-400 transition duration-300 ml-4">History</a>
+            </div>
+        </div>
+    </nav>
+
+    <main class="container mx-auto mt-8 p-4">
+        <div class="bg-darkBg rounded-lg shadow-xl p-6 max-w-2xl mx-auto">
+            <h1 class="text-3xl font-bold mb-6 text-center text-green-400">Explore Nature with CrowSphere</h1>
+            
+            <div class="mb-4">
+                <label for="prompt" class="block text-sm font-medium text-gray-300 mb-2">Ask about nature:</label>
+                <textarea id="prompt" rows="3" class="w-full px-3 py-2 text-gray-300 bg-darkSecondary border border-gray-600 rounded-lg focus:outline-none focus:border-green-500" placeholder="Describe what you see or ask a question..."></textarea>
+            </div>
+
+            <div class="mb-4">
+                <label for="imageUpload" class="block text-sm font-medium text-gray-300 mb-2">Upload an image (optional):</label>
+                <div class="flex items-center">
+                    <input type="file" id="imageUpload" accept="image/*" class="hidden">
+                    <button id="uploadButton" class="bg-green-500 text-white px-4 py-2 rounded-lg shadow hover:bg-green-600 transition duration-300"><i class="fas fa-upload mr-2"></i>Choose File</button>
+                    <span id="fileName" class="ml-4 text-gray-400">No file chosen</span>
+                </div>
+            </div>
+
+            <div class="text-center mt-6">
+                <button id="submitButton" class="bg-green-500 text-white px-6 py-2 rounded-lg shadow hover:bg-green-600 transition duration-300">Submit</button>
+            </div>
+
+            <div id="response" class="mt-6 p-4 bg-darkSecondary rounded-lg text-gray-300"></div>
+        </div>
+
+        <div id="chatHistory" class="mt-8"></div>
+    </main>
+    
+    <script src="app.js"></script>
+</body>
+</html>
